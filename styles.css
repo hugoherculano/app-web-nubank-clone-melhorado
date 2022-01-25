@@ -332,18 +332,18 @@ button {
 /* Última seção: Seção Descubra */
 
 
-.descubra .content-descubra h5 {
+.descubra .content-descubra .title-descubra {
     padding: 3px 0 25px 0;
     font-size: 15px;
 }
 
-.descubra .content-descubra nav {
+.descubra .content-descubra .nav-descubra {
     display: flex;
     align-items: stretch;
     overflow-x: auto;
 }
 
-.descubra .content-descubra nav div {
+.descubra .content-descubra .box-descubra {
     background: #eee;
     margin-right: 10px;
     padding: 20px;
@@ -353,20 +353,20 @@ button {
     justify-content: space-between;
 }
 
-.descubra .content-descubra nav div:last-child {
+.descubra .content-descubra .box-descubra:last-child {
     margin-right: 0px;
 
 }
 
-.descubra .content-descubra nav div section {
+.descubra .content-descubra .top-descubra {
     margin-bottom: 20px;
 }
 
-.descubra .content-descubra nav div section h6 {
+.descubra .content-descubra .top-descubra h6 {
     font-size: 14px;
 }
 
-.descubra .content-descubra nav div section h6 span {
+.descubra .content-descubra .top-descubra h6 span {
     background: rgb(130, 10, 209);
     color: #fff;
     font-size: 10px;
@@ -375,13 +375,13 @@ button {
     display: inline-block;
 }
 
-.descubra .content-descubra nav div section p {
+.descubra .content-descubra .top-descubra p {
     width: 220px;
     font-size: 12px;
     font-weight: 400;
 }
 
-.descubra .content-descubra nav div button {
+.descubra .content-descubra .btn-descubra {
     background: rgb(130, 10, 209);
     color: #fff;
     padding: 8px;
