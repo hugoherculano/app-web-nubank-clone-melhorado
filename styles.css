@@ -23,36 +23,67 @@ hr {
     background: #eee;
 }
 
+button {
+    border: none;
+    cursor: pointer;
+}
+
+
+
 .max-width {
     padding: 25px;
     max-width: 500px;
     margin: 0 auto;
-    border-left: 4px solid rgb(130, 10, 209);
-    border-right: 4px solid rgb(130, 10, 209);
+    border-left: 4px solid #fff;
+    border-right: 4px solid #fff;
 }
 
+.marg-top-bot {
+    margin: 10px 0;
+}
+
+.i-topic {
+    margin: 10px 0 15px 0;
+    font-size: 18px;
+}
+
+.parag-h2 {
+    color: #555;
+    margin: 20px 0;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.parag-h2 span {
+    color: rgb(7, 138, 7);
+}
 
 /* Splash da tela */
 
 #splash {
-    background: rgb(130, 10, 209);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#splash section {
+    position: relative;
+}
+
+#splash section .content-splah {
     width: 100%;
-    transition: all 0.3s ease;
+    max-width: 500px;
+    height: 100%;
     position: fixed;
-    z-index: 999;
-    top: 0 !important;
-}
-
-#splash .content-splah {
-    width: 100%;
-    height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: rgb(130, 10, 209);
+    background-image: url(imgs/splash.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
-#splash .content-splah img {
-    width: 100%;
+#splash section .content-splah img {
+    width: 200px;
 }
 
 /* Menu superior da tela */
@@ -91,7 +122,7 @@ hr {
 
 /* Seção de conta (R$) */
 
-#conta {
+#conta .max-width {
     background: #fff;
 }
 
@@ -116,16 +147,46 @@ hr {
 }
 
 #conta .content-conta h2 {
-    font-size: 25px;
-    margin-bottom: 30px;
+    font-size: 26px;
+    font-weight: 600;
 }
 
-#conta .content-conta section {
-    overflow-x: auto;
+#conta .content-conta h4 {
+    color: #555;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#conta .content-conta .btns-secao {
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
-#conta .content-conta section div {
+#conta .content-conta .btns-secao button {
+    background: #eee;
+    padding: 10px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+#conta .content-conta .btns-secao button:first-child {
+    background: rgb(212, 30, 30);
+    color: #fff;
+    margin-right: 7px;
+}
+
+#conta .content-conta .options {
+    overflow-x: scroll;
+    display: flex;
+    margin-top: 20px;
+    /*scrollbar-width: none;*/
+}
+
+#conta .content-conta .options div {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -133,21 +194,20 @@ hr {
     padding: 20px 0;
 }
 
-#conta .content-conta section div i {
+#conta .content-conta .options div i {
     font-size: 18px;
-    background: #ddd;
+    background: #eee;
     width: 70px;
     height: 70px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 700;
 }
 
-#conta .content-conta section div strong {
+#conta .content-conta .options div strong {
     text-align: center;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 600;
     padding-top: 10px;
 }
@@ -163,59 +223,183 @@ hr {
     padding-bottom: 0;
 }
 
-#cards .content-cards {
+.cards-cartao .content-cards {
     display: flex;
     flex-direction: column;
 }
 
-#cards .content-cards .cards-card {
-    background: #ddd;
+.cards-cartao .content-cards .cards-card {
+    background: #eee;
     display: flex;
     align-items: center;
     padding: 20px;
     border-radius: 8px;
 }
 
-#cards .content-cards section {
+.cards-cartao .content-cards .cards-card p {
+    margin-left: 15px;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+
+.cards-cartao .content-cards section {
     overflow-x: auto;
     display: flex;
     margin: 10px 0;
     padding: 10px 0;
 }
 
-#cards .content-cards section div {
+.cards-cartao .content-cards section div {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
-    font-size: 12px;
-    background: #ddd;
+    padding: 25px 15px;
+    background: #eee;
     border-radius: 8px;
 }
 
-#cards .content-cards section div:first-child {
+.cards-cartao .content-cards section div:first-child {
     margin-right: 10px;
 }
 
-#cards .content-cards section div p {
-    width: 200px;
+.cards-cartao .content-cards section div p {
+    width: 220px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.cards-cartao .content-cards section div p span {
+    color: rgb(130, 10, 209);
+}
+
+
+/* Seção do cartão de crédito */
+
+
+.credito .content-card-cred div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.credito .content-card-cred div button {
+    border: none;
+    background: none;
+}
+
+.credito .content-card-cred div i {
+    font-size: 20px;
+}
+
+
+
+/* Seção da aba de Investimento */
+
+
+.investimento .content-investimento .btns-secao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.investimento .content-investimento .btns-secao button {
+    padding: 18px !important;
+    border-radius: 8px !important;
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    font-size: 12px;
+    text-align: start;
+}
+
+.investimento .content-investimento .btns-secao button:first-child {
+    background: #eee !important;
+    color: #000 !important;
+    margin-right: 0 !important;
+    margin-bottom: 12px;
+}
+
+.investimento .content-investimento .btns-secao button i {
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+
+
+
+/* Última seção: Seção Descubra */
+
+
+.descubra .content-descubra h5 {
+    padding: 3px 0 25px 0;
+    font-size: 15px;
+}
+
+.descubra .content-descubra nav {
+    display: flex;
+    align-items: stretch;
+    overflow-x: auto;
+}
+
+.descubra .content-descubra nav div {
+    background: #eee;
+    margin-right: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.descubra .content-descubra nav div:last-child {
+    margin-right: 0px;
+
+}
+
+.descubra .content-descubra nav div section {
+    margin-bottom: 20px;
+}
+
+.descubra .content-descubra nav div section h6 {
+    font-size: 14px;
+}
+
+.descubra .content-descubra nav div section h6 span {
+    background: rgb(130, 10, 209);
+    color: #fff;
     font-size: 10px;
-    font-weight: 500;
+    padding: 3px;
+    border-radius: 5px;
+    display: inline-block;
 }
 
-#card-cred {
-    background: #fff;
+.descubra .content-descubra nav div section p {
+    width: 220px;
+    font-size: 12px;
+    font-weight: 400;
 }
 
-
-@media (min-width: 539px) {
-    #splash {
-        background: rgb(130, 10, 209);
-    }
+.descubra .content-descubra nav div button {
+    background: rgb(130, 10, 209);
+    color: #fff;
+    padding: 8px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    width: 115px;
 }
+
 
 @media (max-width: 500px) {
+
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+
     .max-width {
         border: 0;
     }
+
 }
